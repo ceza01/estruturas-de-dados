@@ -8,7 +8,7 @@ Embora Java
 e outras linguagens possuam classes ou bibliotecas que oferecem implementações prontas dessas 
 estruturas de dados, entender como elas funcionam proporciona melhor compreensão do 
 funcionamento do código e a possibilidade de adaptar essas estruturas padrões.
-×
+
 ## Estruturas implementadas (_em andamento_)
 1. **Lista Simplesmente Encadeada:**  
 Implementação de uma lista simplesmente encadeada com as seguintes classes:
