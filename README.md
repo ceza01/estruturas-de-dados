@@ -7,7 +7,7 @@ pastas e em classes separadas para facilitar a organização e entendimento do c
 Embora Java 
 e outras linguagens possuam classes ou bibliotecas que oferecem implementações prontas dessas 
 estruturas de dados, entender como elas funcionam proporciona melhor compreensão do 
-funcionamento do código e a possibilidade de adaptar essas estruturas padrão.
+funcionamento do código e a possibilidade de adaptar essas estruturas conforme necessário.
 
 ## Estruturas implementadas (_em andamento_)
 1. **Lista Simplesmente Encadeada:**  
