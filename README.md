@@ -10,12 +10,12 @@ estruturas de dados, entender como elas funcionam proporciona melhor compreensã
 funcionamento do código e a possibilidade de adaptar essas estruturas conforme necessário.
 
 ## Estruturas implementadas (_em andamento_)
-1. **Vetores:**
+1. **Vetores:**\
 Implementação de um vetor com as seguintes classes:
    - `Vetor`: criação de um Vetor e dos métodos usados.
    - 
 
-2. **Lista Simplesmente Encadeada:**  
+2. **Lista Simplesmente Encadeada:**\
 Implementação de uma lista simplesmente encadeada com as seguintes classes:
    - `Nodo`: criada para representar um nó na lista encadeada;
    - `ListaEncadeada`: implementa a lógica da lista encadeada, além de métodos para inserção, remoção e impressão da lista.
