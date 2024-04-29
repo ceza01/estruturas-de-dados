@@ -10,7 +10,7 @@ estruturas de dados, entender como elas funcionam proporciona melhor compreensã
 funcionamento do código e a possibilidade de adaptar essas estruturas conforme necessário.
 
 ## Estruturas implementadas (_em andamento_)
-1. **Vetores:
+1. **Vetores:**
 Implementação de um vetor com as seguintes classes:
    - `Vetor`: criação de um Vetor e dos métodos usados.
    - 
