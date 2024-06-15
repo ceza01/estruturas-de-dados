@@ -1,7 +1,5 @@
 package com.listaencadeada;
 
-import java.util.List;
-
 public class ListaEncadeada {
     Nodo cabeca;
 
@@ -58,4 +56,5 @@ public class ListaEncadeada {
         }
         System.out.print("]\n");
     }
+
 }
