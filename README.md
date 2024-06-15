@@ -23,3 +23,10 @@ Implementação de uma lista simplesmente encadeada com as seguintes classes:
 3. **Lista Duplamente Encadeada:**\
 Implementação de uma lista duplamente encadeada em Java, utilizando a mesma estrutura de classes da lista simplesmente encadeada, com modificações na classe Nodo para suportar ponteiros para o nó anterior e próximo.
    
+4. **Árvores:**\
+Implementação de um árvore com as seguintes classes:
+   - `Nodo`: criada para representar um nó na árvore;
+   - `Arvore`: implementa a lógica da árvore, além de métodos de inserção, métodos de varredura 
+     e de busca.;
+   - `BST`: representação de uma Binary Search Tree(Árvore binária de busca).
+   
