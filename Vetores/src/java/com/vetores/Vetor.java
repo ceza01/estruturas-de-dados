@@ -1,5 +1,7 @@
 package com.vetores;
 
+import java.util.Arrays;
+
 public class Vetor {
 
     private int [] elementos;
@@ -26,4 +28,37 @@ public class Vetor {
         }
         return false;
     }
+
+    public int buscar(int posicao){
+        if (!(posicao >= 0 && posicao < tamanho)) {
+            throw new IllegalArgumentException("Posição inválida");
+        }
+        return this.elementos[posicao];
+    }
+
+    public int tamanho(){
+        return this.tamanho;
+    }
+
+    @Override
+    public String toString() {
+
+        StringBuilder s = new StringBuilder();
+        s.append("[");
+
+        for (int i=0; i<this.tamanho-1; i++){
+            s.append(this.elementos[this.tamanho-1]);
+            s.append(", ");
+        }
+
+        if (this.tamanho>0){
+            s.append(this.elementos[this.tamanho-1]);
+        }
+
+        s.append("]");
+
+        return s.toString();
+    }
+
+
 }
