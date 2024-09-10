@@ -36,6 +36,15 @@ public class Vetor {
         return this.elementos[posicao];
     }
 
+    public int buscarElemento(int elemento){
+        for (int i=0; i<this.tamanho; i++){
+            if (this.elementos[i] == elemento) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
     public int tamanho(){
         return this.tamanho;
     }
@@ -59,6 +68,4 @@ public class Vetor {
 
         return s.toString();
     }
-
-
 }
