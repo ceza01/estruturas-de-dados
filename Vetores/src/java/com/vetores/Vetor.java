@@ -1,7 +1,5 @@
 package com.vetores;
 
-import java.util.Arrays;
-
 public class Vetor {
 
     private int [] elementos;
@@ -56,7 +54,7 @@ public class Vetor {
         s.append("[");
 
         for (int i=0; i<this.tamanho-1; i++){
-            s.append(this.elementos[this.tamanho-1]);
+            s.append(this.elementos[i]);
             s.append(", ");
         }
 
