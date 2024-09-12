@@ -10,5 +10,10 @@ public class Principal {
         vetor.adiciona(4);
 
         System.out.println(vetor);
+
+        vetor.remove(3);
+
+        System.out.println(vetor);
+
     }
 }
