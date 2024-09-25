@@ -1,24 +1,16 @@
 package com.vetores;
 
-public class Vetor {
+public class Vetor<T> {
 
-    private int [] elementos;
+    private T[] elementos;
     private int tamanho;
 
     public Vetor(int capacidade){
-        this.elementos = new int[capacidade];
+        this.elementos = (T[]) new Object[capacidade];
         this.tamanho = 0;
     }
 
-//    public void adiciona(int elemento){
-//        for (int i=0; i < this.elementos.length; i++){
-//            if (this.elementos[i] == 0) {
-//                this.elementos[i] = elemento;
-//                break;
-//            }
-//        }
-//    }
-    public boolean adiciona(int elemento) {
+    public boolean adiciona(T elemento) {
         aumentaCapacidade();
         if (this.tamanho < this.elementos.length){
             this.elementos[this.tamanho] = elemento;
@@ -28,7 +20,7 @@ public class Vetor {
         return false;
     }
 
-    public boolean adiciona(int posicao, int elemento){
+    public boolean adiciona(int posicao, T elemento){
         if (!(posicao >= 0 && posicao < tamanho)) {
             throw new IllegalArgumentException("Posição inválida");
         }
@@ -55,16 +47,16 @@ public class Vetor {
         this.tamanho--;
     }
 
-    public int buscar(int posicao){
+    public T buscar(int posicao){
         if (!(posicao >= 0 && posicao < tamanho)) {
             throw new IllegalArgumentException("Posição inválida");
         }
         return this.elementos[posicao];
     }
 
-    public int buscarElemento(int elemento){
+    public int buscarElemento(T elemento){
         for (int i=0; i<this.tamanho; i++){
-            if (this.elementos[i] == elemento) {
+            if (this.elementos[i].equals(elemento)) {
                 return i;
             }
         }
@@ -97,7 +89,7 @@ public class Vetor {
 
     private void aumentaCapacidade(){
         if (this.tamanho == this.elementos.length){
-            int[] elementosNovos = new int[this.elementos.length*2];
+            T[] elementosNovos =(T[]) new Object[this.elementos.length*2];
             for (int i = 0; i < this.tamanho; i++){
                 elementosNovos[i] = this.elementos[i];
             }
