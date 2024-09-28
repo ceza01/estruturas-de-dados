@@ -67,6 +67,15 @@ public class Vetor<T> {
         return buscarElemento(elemento) > -1;
     }
 
+    public int ultimoIndiceDe(T elemento){
+        for (int i=this.tamanho-1; i>=0; i--){
+            if (this.elementos[i].equals(elemento)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
     public int tamanho(){
         return this.tamanho;
     }
