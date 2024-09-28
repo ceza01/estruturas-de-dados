@@ -19,8 +19,12 @@ funcionamento do código e a possibilidade de adaptar essas estruturas conforme 
 - `adiciona(T elemento)`: Adiciona um elemento ao final do vetor, aumentando sua capacidade se necessário.
 - `adiciona(int posicao, T elemento)`: Insere um elemento em uma posição específica, deslocando os elementos subsequentes.
 - `remove(int posicao)`: Remove um elemento da posição especificada e reorganiza o vetor.
+- `removePorElemento(T elemento)`: Remove a primeira ocorrência de um elemento no vetor.
+- `limpar()`: Remove todos os elementos do vetor.
 - `buscar(int posicao)`: Retorna o elemento na posição especificada.
 - `buscarElemento(T elemento)`: Busca um elemento e retorna sua posição no vetor.
+- `contem(T elemento)`: Verifica se o vetor contém um determinado elemento.
+- `ultimoIndiceDe(T elemento)`: Retorna a última posição em que o elemento foi encontrado no vetor.
 - `tamanho()`: Retorna o número de elementos no vetor.
 - `toString()`: Retorna uma representação em string do vetor.
 - `aumentaCapacidade()`: Aumenta a capacidade do vetor quando necessário.
