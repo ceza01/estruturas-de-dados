@@ -63,6 +63,10 @@ public class Vetor<T> {
         return -1;
     }
 
+    public boolean contem(T elemento){
+        return buscarElemento(elemento) > -1;
+    }
+
     public int tamanho(){
         return this.tamanho;
     }
