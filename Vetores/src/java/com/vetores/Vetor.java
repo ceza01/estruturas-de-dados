@@ -47,6 +47,13 @@ public class Vetor<T> {
         this.tamanho--;
     }
 
+    public void removePorElemento(T elemento){
+        int posicao = this.buscarElemento(elemento);
+        if (posicao > -1){
+            this.remove(posicao);
+        }
+    }
+
     public T buscar(int posicao){
         if (!(posicao >= 0 && posicao < tamanho)) {
             throw new IllegalArgumentException("Posição inválida");
