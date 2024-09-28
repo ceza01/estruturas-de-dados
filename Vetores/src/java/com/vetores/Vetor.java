@@ -54,6 +54,13 @@ public class Vetor<T> {
         }
     }
 
+    public void limpar(){
+        for (int i=0; i<this.tamanho; i++){
+            this.elementos[i] = null;
+        }
+        this.tamanho = 0;
+    }
+
     public T buscar(int posicao){
         if (!(posicao >= 0 && posicao < tamanho)) {
             throw new IllegalArgumentException("Posição inválida");
